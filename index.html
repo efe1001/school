@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibs</title>
+    <link rel="stylesheet" href="mystyles\ibs.css">
+    <style>
+        
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: red;
+    color: blue;
+    display: flex;
+    padding: 5px;
+    flex-direction: row-reverse;
+}
+
+.nav_container{
+
+    background-color: blue;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 30px;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.dropdown{
+    overflow: none;
+}
+
+.dropdown-button{
+    display: inline-block;
+
+    
+}
+.dropbutton-content{
+    position: absolute;
+    display: none;
+    background-color: white;
+    min-width: 300px;
+    padding: 5px;
+    margin: 0px;
+    top: 130px;
+}
+
+.dropbutton-content a{
+    display: block;
+    color: blue;
+    font-size: 20px;
+   padding: 12px 14px;
+    margin: 0px;
+    text-align: left;
+    text-decoration: none;
+    top: 70px;
+    
+}
+
+.dropbutton-content a:hover{
+    background-color: blue;
+    color: crimson;
+    
+    
+}
+
+.dropdown:hover .dropbutton-content{
+    display: block;
+    
+}
+
+.blank1{
+    background-color: black;
+    padding: 2px;
+}
+
+.img {
+    width: 100%;
+    height: 50dvh;
+}
+
+.container2 {
+    margin: 0px;
+    padding: 0px;
+     display: flex;
+     
+     
+ }
+
+.object1{
+    background-color: red;
+    padding: 100px;
+    width: 50px;
+}
+.object2{
+    background-color: blue;
+    padding: 100px;
+    width: 50px;
+}
+.object3{
+    background-color: yellow;
+    padding: 100px;
+    width: 50px;
+}
+#obj{
+    flex-grow: 1;
+}
+
+h2{
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+.chi{
+    text-align: center;
+    color: white;
+}
+#adm{
+    background-color: red;
+    padding: 20px;
+    margin: 2px;
+}
+
+h3{
+    text-align: center;
+    color: white;
+}
+
+h4{
+    text-align: center;
+    color: green;
+    cursor: pointer;
+    font-size: 19px;
+}
+.info{
+    display: flex;
+    flex-shrink: inherit;
+    flex-wrap: wrap;
+}
+
+.info1{
+    background-color: rgb(131, 131, 240);
+    width: 50px;
+    
+    
+}
+.info2{
+    background-color: rgb(11, 85, 135);
+    width: 50px;
+    color: white;
+    font-size: 19px;
+    
+}
+.info3{
+    background-color: rgb(9, 63, 100);
+}
+
+#infom{
+    flex-grow: 1;
+}
+
+img2{
+    width: 50px;
+    padding: 50px;
+}
+form{
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="dele"],
+textarea,
+
+input[type="file"] {
+    padding: 5px;
+}
+input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover{
+    background-color: black;
+}
+textarea {
+    resize: vertical;
+}
+@media screen and (max-width: 600px) {
+    form{
+        padding: 15px;
+    }
+}
+    .news{
+        padding: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+    .cap{
+        display: flex;
+    }
+
+    .cap1{
+        flex-grow: 1;
+    }
+
+    #caps1{
+
+        width: 50px
+    }
+    #caps2{
+        width: 50px;
+    }
+    #caps3{
+        background-color: yellow;
+        width: 30px;
+    }
+
+
+/* News Section Styling */
+.news_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news_container span{
+    flex: 1;
+    padding: 10px;
+}
+
+.news_container span img{
+    width: 100%;   
+}
+
+h7{
+    font-weight: bold;
+}
+
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+container3{
+    max-width: 1170px;
+    background-color: red;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        08106334006 07065636067 Committed to Safeguarding Apply
+    </header>
+    <div class="nav_container">
+
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+        <a class="dropdown-button" href="#aboutus">ABOUT US</a>
+        <div class="dropbutton-content">
+            <a href="#history">history and founder day</a>
+            <a href="#history">About us</a>
+            <a href="#history">advisory broad</a>
+            <a href="#history">our Team</a>
+            <a href="#history">principal message</a>
+        </div>
+        </div>
+        <a href="#admission">ADMISSIONS</a>
+        <a href="#Academics">ACADEMICS</a>
+        <a href="#Studentlife">STUDENT LIFE</a>
+        <a href="#CONTACT">CONTACT</a>
+        <a href="#Portal">PORTAL</a>
+    </nav>
+        
+    </div>
+    <div class="blank1">
+
+    </div>
+
+    <div class="img_container">
+
+        <img src="./assets/51.jpg" class="img" />
+
+    </div>
+
+    <div class="container2">
+        <span class="object1" id="obj">
+            <h2>EARLY YEAR</h2>
+            <p class="chi">
+                Children are welcome into a safe, stimulating and nurturing environment where their foundation
+                 stage begins. Click on the box to learn more.
+                </p>
+        </span>
+        <span class="object2"  id="obj"><h2>PRIMARY YEAR</h2>
+        <P class="chi">
+            Children need to learn the necessary skills 
+            to be successful both now and in the future.
+             Click on the box to learn more.
+            
+            </P></span>
+        <span class="object3" id="obj"><h2>DAY SECONDARY</h2>
+        <P class="chi">
+            Start-Rite Schools (Secondary) provides a 
+            21st-century learning environment for
+             students. Click on the box to learn more.
+            
+            </P></span>
+            </div>
+            <div id="adm">
+                <span>
+                    <h2>---</h2>
+                    <h3>Admission Is On (2024/2025 Session)</h3>
+                    <h3>Your child can gain the edge to succeed in his/her
+                         education (socially, morally, and academically) when 
+                         he/she joins the right school – Start-Rite Schools,
+                          Abuja, Nigeria. To learn more, please call 08106334006, 07065636067, or 08182643930. You can also
+                         send an email to admissions@startriteschools.com.ng</h3>
+                         <h4>click here to learn more</h4>
+                </span>
+    </div>
+    <div  class="info">
+        <span  class="info1" id="infom"> <img src="./assets/Trustee2.jpg" class="img2" /></span>
+        <span  class="info2" id="infom">
+            
+            <h3>YOU ARE WELCOME</h3>
+           
+            <h6>
+                We are delighted that you found us and have chosen to look through our website and to learn more. 
+                <br><br>
+                Kindly provide us your contact details and we will get back to you with the requested information in the shortest time possible. Please note that we are open for enquiries between 10 a.m. and 12 noon, Mondays to Fridays and 9 a.m. to 12 noon during holidays. If you would like to apply to Start-Rite Schools online, please click here. 
+                <br><br>
+                COVID-19 brought a change to how we operate. If you would like to learn more about how we are dealing with the spread of the COVID-19 (Coronavirus), please click here. </h6>
+        </span>
+        <span  class="info3" id="infom"><h2>GET INFORMATION HERE</h2>
+            <form action="" method="POST" enctype="multipart/form-data" autocomplete="on">
+                <label for="text">FULL NAME</label>
+                <input type="text" name="fullname" required>
+                <br><br>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" required>
+                <br><br>
+                <label for="tel">PHONE NUMBER</label>
+                <input type="tel" name="tel" required>
+                <br><br>
+                <label>how did you find us</label>
+                <input type="checkbox" id="socialmedia" name="interest">
+                <label for="checkbox">social media</label>
+                <input type="checkbox" id="google" name="interest">
+                <label for="checkbox">google</label>
+                <input type="checkbox" id="google" name="google">
+                <label for="checkbox">TV</label>
+                <br><br>
+                <label for="bio">bio</label>
+                <textarea id="bio" name="bio"></textarea>
+                <br><br>
+                <input type="submit" value="register">
+
+            </form>
+        </span>
+    </div>
+    <div>
+        <span>
+           <p class="news"> LATEST NEWS</p>
+           <p class="news"> < ></p>
+        </span>
+    </div>
+
+    <div class="news_container">
+        <span><img src="./assets/36-700x430.jpg" />
+        <h7>Chukwudubem Amasiani: Nigeria’s Rising Tennis Star Triumphs in Namibia</h7>
+        <br><br>
+    <h8>Start-Rite Schools, Abuja, proudly celebrates Chukwudubem Amasiani on his latest achievement at the recently 
+        concluded U-14 African Junior Tennis Championship...</h8></span>
+        <span><img src="./assets/26-700x430.jpg" />
+        <h7>Alumni News: Engr. Yemike Oburo</h7>
+    <br><br>
+<h8>We celebrate the remarkable achievement of one of Start-Rite Schools’ pioneering students,
+     Engr. Yemike Oburo (BEng, MEng), who recently graduated...</h8></span>
+        <span><img src="./assets/17-700x430.jpg" />
+        <h7>Start-Rite Schools, Abuja Celebrate Graduation 
+            with Memorable Ceremonies</h7>
+            <br><br>
+        <h8>The grounds of Start-Rite Schools buzzed with excitement and pride as the institution
+             held a series of vibrant graduation ceremonies,...</h8></span>
+    </div>
+   <footer class="footer">
+    <div class="container3">
+    <div class="row">
+        <div class="footer-col">
+            <h4>address</h4>
+            <ul>
+                <li><a href="#">Plot 1036 Adesoji Aderemi Street, 
+                    Off Samuel Jereton Mariere Road, After Zone “E” Gate,
+                     National 
+                    Assembly Quarters, Gudu District, Abuja, 
+                    Nigeria.
+                    08106334006, 07065636067, 08182643930
+
+                    admin@startriteschools.com.ng
+                    
+                    info@startriteschools.com.ng</a></li>
+                <li><a href="#">our service</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>about us</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">admissions</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Student life</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Amissions</h4>
+            <ul>
+                <li><a href="#">Amission process</a></li>
+                <li><a href="#">Event Calendar</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Academics</h4>
+            <ul>
+                <li><a href="#">Early years</a></li>
+                <li><a href="#">primary</a></li>
+                <li><a href="#">secondary</a></li>
+            </ul>
+        </div>
+                
+               
+    </div>
+        </div>
+    </div>
+    </div>
+
+   </footer>
+</body>
+</html>
